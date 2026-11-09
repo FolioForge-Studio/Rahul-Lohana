@@ -692,7 +692,7 @@
     addEventListener('resize', updProg);
     updProg();
     // 3D tilt on screenshot frames (fine pointers only)
-    if (matchMedia('(pointer:fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    if (matchMedia('(hover:hover)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches){
       document.querySelectorAll('.frame').forEach(function(f){
         f.addEventListener('pointermove', function(e){
           var r = f.getBoundingClientRect();
@@ -706,4 +706,4 @@
 </script>
 
 </body>
-  </html>
+              </html>
